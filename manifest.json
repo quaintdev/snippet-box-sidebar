@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "name": "snippet-box",
+    "description": "Save snippets from sidebar to your selfhosted snippet-box instance",
+    "version": "0.3",
+    "browser_specific_settings": {
+        "gecko": {
+            "strict_min_version": "54.0a1"
+        }
+    },
+    "sidebar_action": {
+        "default_icon": "icons/code-braces-box.png",
+        "default_title": "snippet-box",
+        "default_panel": "sidebar/panel.html"
+    },
+    "browser_action": {
+        "default_icon": "icons/code-braces-box.png"
+    },
+    "background": {
+        "scripts": [
+            "internal/background.js"
+        ]
+    },
+    "options_ui": {
+        "page": "internal/options.html"
+    },
+    "permissions": [
+        "storage",
+        "<all_urls>"
+    ],
+    "commands": {
+        "_execute_sidebar_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y"
+            }
+        }
+    }
+}
