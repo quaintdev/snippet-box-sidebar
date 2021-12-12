@@ -3,6 +3,7 @@ function saveOptions(e) {
     browser.storage.sync.set({
         url: document.querySelector("#instance-url").value
     });
+    browser.sidebarAction.setPanel({ panel: browser.runtime.getURL(document.querySelector("#instance-url").value) });
 }
 
 function restoreOptions() {

@@ -2,10 +2,11 @@
     "manifest_version": 2,
     "name": "snippet-box",
     "description": "Save snippets from sidebar to your selfhosted snippet-box instance",
-    "version": "0.3",
+    "version": "0.5",
     "browser_specific_settings": {
         "gecko": {
-            "strict_min_version": "54.0a1"
+            "id": "{b5ba7858-f8af-4065-9472-e3370b43efa7}",
+            "strict_min_version": "80.0"
         }
     },
     "sidebar_action": {
